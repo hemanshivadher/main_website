@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&display=swap");
+/* slick-carousel styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for your design firm */
+body {
+  @apply bg-white text-black;
+  font-family: "Hind Mysuru", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-next {
+  right: 25px !important; 
+}
+
+.slick-prev {
+  left: 25px !important; 
+}
+
+.slick-arrow{
+ z-index: 10000 !important;
+}
+
+.ImageBackgroundWrap {
+  background-size: cover;
+  background-position: center top;
+  background-attachment: scroll; /* Ensures no unexpected behavior on mobile */
+}
+
+@media (min-width: 1024px) {
+  .ImageBackgroundWrap {
+    background-attachment: fixed; /* Apply fixed background only on larger screens */
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+  }
+
+.homepage-container {
+  max-width: 1450px; /* Adjust this value to your preferred max-width */
+  margin-left: auto; /* Centers the container */
+  margin-right: auto; /* Centers the container */
+  padding-left: 16px; /* Adds padding to left */
+  padding-right: 16px; /* Adds padding to right */
+}
+
+/* Add responsive behavior */
+.col-5 {
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5;
+}
+
+.col-5 > div {
+  background: black;
+  width: 105%;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.sm {
+  height: 75px;
+}
+.lg {
+  height: 125px;
+}
