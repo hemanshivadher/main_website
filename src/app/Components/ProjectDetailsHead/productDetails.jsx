@@ -21,8 +21,8 @@ export default function ProductDetails() {
   const isLoading = !projectData; // Show shimmer when data is not available
 
   return (
-    <section className="space-y-16 py-16">
-      <div className="lg:px-16 px-8 flex flex-col lg:flex-row items-center lg:space-x-16 space-y-12 lg:space-y-0 justify-center">
+    <section className="">
+      <div className="lg:px-16 px-8 flex flex-col lg:flex-row items-center lg:space-x-16 lg:space-y-0 justify-center">
         {/* Text Section */}
         {isLoading ? (
           <div className="w-full lg:w-1/2 text-center lg:text-left self-center animate-pulse">
@@ -35,11 +35,11 @@ export default function ProductDetails() {
           </div>
         ) : (
           <div className="w-full lg:w-1/2 text-center lg:text-left self-center">
-            <div className="p-4 lg:p-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <div className="p-8 ">
+              <h2 className="text-4xl text-center font-bold text-gray-900 mb-4">
                 {projectData.name}
               </h2>
-              <p className="text-lg text-gray-700 mb-6 font-medium">
+              <p className="text-lg text-center text-gray-700 mb-6 font-medium">
                 {projectData.category}
               </p>
               {/* <p className="text-lg text-gray-700 mb-6 font-medium">
