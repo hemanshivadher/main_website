@@ -18,13 +18,9 @@ export default function Navbar() {
 
   return (
     <header className="bg-white text-black shadow-lg w-full z-50">
-      <nav className="container mx-auto px-6  flex justify-between items-center">
-        <a href="/">
-          {/* <div className="text-2xl font-bold">Maitri Associates</div> */}
-          <Image src={"/logo.png"} width={50} height={50} alt="main" />
-        </a>
+      <nav className="container mx-auto  lg:px-6  flex justify-end items-center">
 
-        <div className="hidden md:flex space-x-6 mt-2">
+        <div className="hidden md:flex space-x-6 mt-2 mr-5">
           <a href="/projects" className="hover:text-gray-600">
             Projects
           </a>
@@ -32,6 +28,7 @@ export default function Navbar() {
             Lets Connect!
           </a>
         </div>
+        
 
         {/* Mobile Menu Toggle with Animation */}
         <button
@@ -44,6 +41,11 @@ export default function Navbar() {
             <GiHamburgerMenu className="transition-all" />
           )}
         </button>
+
+        <a href="/">
+          {/* <div className="text-2xl font-bold">Maitri Associates</div> */}
+          <Image src={"/Maitri Logo++VE_page-0001.jpg"} width={50} height={50} alt="main" className="scale-120 lg:scale-150 overflow-hidden mr-0" />
+        </a>
       </nav>
 
       {/* Mobile Menu */}
@@ -69,6 +71,7 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      
     </header>
   );
 }
