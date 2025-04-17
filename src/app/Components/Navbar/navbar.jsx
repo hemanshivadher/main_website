@@ -42,7 +42,7 @@ export default function Navbar() {
           )}
         </button>
 
-        <a href="/">
+        <a href="/" className="overflow-hidden">
           {/* <div className="text-2xl font-bold">Maitri Associates</div> */}
           <Image src={"/Maitri Logo++VE_page-0001.jpg"} width={50} height={50} alt="main" className="scale-120 lg:scale-150 overflow-hidden mr-0" />
         </a>
